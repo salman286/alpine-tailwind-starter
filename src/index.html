@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack, TailwindCSS and AplineJS test</title>
+  </head>
+  <body>
+    <div
+      class="bg-primary min-h-screen flex items-center justify-center flex-col"
+      x-data="{ open: false }"
+    >
+      <span x-show="!open">
+        <button
+          class="bg-secondary px-8 py-4 text-white text-2xl rounded"
+          @click="open = true"
+        >
+          Click Me
+        </button>
+      </span>
+
+      <span x-show="open" class="flex items-center justify-center flex-col">
+        <h1 class="text-white font-merri text-3xl mb-10">
+          Project Setup With Webpack, AlpineJS and TailwindCSS.
+        </h1>
+        <img class="max-w-[400px]" src="./assets/images/relax.svg" />
+      </span>
+    </div>
+  </body>
+</html>
